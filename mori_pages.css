@@ -1,0 +1,43 @@
+BODY    
+{
+font-family     :       Arial, Helvetica,Lucida;
+background-color: #FFFFFF;
+margin-left: 2%; margin-right: 2%;
+margin-bottom: 5%;
+}
+A:link
+{
+text-decoration :       none;
+color           :       blue;
+}
+A:active
+{
+text-decoration :       none;
+color           :       black;
+}
+A:visited 
+{
+text-decoration :       none; 
+color           :       blue; 
+}               
+A:hover 
+{ 
+text-decoration :       none; 
+color           :       red;
+}
+
+img.pubPic {
+        width: 90px;
+        height: 90px;
+	border: 0;
+}
+
+img.afflPic {
+        height: 90px;
+	border: 0;
+}
+
+
+% h1 { margin-left: -2%;}
+% h2,h3,h4,h5,h6 { margin-left: -1%; }
+

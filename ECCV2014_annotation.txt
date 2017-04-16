@@ -1,0 +1,32 @@
+We used Event kit portion of TRECVID MED 2011 data for experiments in this paper. If you are willing to run experiments using our tag annotations, please use the code provided with our previous publication to load the tag annotations on TRECVID MED 2011 dataset:
+http://www.sfu.ca/~avahdat/MED11_tag_annotation.zip
+
+********************************************
+If you use these annotations, please cite our previous work:
+
+@inproceedings{VahdatM13,
+  author = {Arash Vahdat and Greg Mori},
+  title = {Handling Uncertain Tags in Visual Recognition},
+  booktitle = {International Conference on Computer Vision (ICCV)},
+  year = {2013}
+}
+
+
+********************************************
+Note that in this work we only used tags that have more than 10 positive sample on TRECVID MED 2011 event kit dataset. You can use the following lines in MATLAB to find these tags:
+
+% Assume IDs is a vector that contains list of videos IDs for videos in TRECVID MED 2011 event kit:
+op.tagList = './annotation/tagList.text';
+op.topicList = './annotation/topicList.text';
+op.genreList = './annotation/genreList.text'; 
+op.tags = './annotation/tag.text'; 
+
+[tags allTags] = extractTags(IDs, op);
+
+% find those tags that have more than 10 examples
+numDataPerTag = sum(tags);
+indTags = find(numDataPerTag  > 10);
+
+tags = tags(:, indTags);
+allTags = allTags(indTags);
+
