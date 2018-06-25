@@ -38,7 +38,10 @@ img.afflPic {
 	border: 0;
 }
 
-p.pub {font-size:15px;}
+TBODY
+{
+font-size: 15px;
+}
 
 
 % h1 { margin-left: -2%;}
