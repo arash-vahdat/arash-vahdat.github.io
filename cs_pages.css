@@ -1,10 +1,10 @@
 BODY    
 {
-font-family     :       Arial, Helvetica,Lucida;
+font-family : Arial, Helvetica,Lucida;
 background-color: #FFFFFF;
 margin-left: 2%; margin-right: 2%;
 margin-bottom: 5%;
-font-size: 12pt;
+font-size: 11pt;
 }
 A:link
 {
@@ -38,14 +38,12 @@ img.afflPic {
 	border: 0;
 }
 
-TBODY
+TD
 {
-font-size: 12pt;
-font-family     :       Arial, Helvetica,Lucida;
-margin-left: 2%; 
-margin-right: 2%;
-margin-bottom: 5%;
-margin-top: 5%;
+font-size: 11pt;
+font-family : Arial, Helvetica,Lucida;
+padding-top: 10px; 
+padding-bottom: 10px
 }
 
 
